@@ -1,0 +1,167 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    background-color: #f4f7fc;
+}
+.sidebar {
+    width: 250px;
+    background-color: #4f8ead;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding-top: 20px;
+    color: white;
+}
+.sidebar h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+.sidebar ul li {
+    padding: 15px 20px;
+    cursor: pointer;
+}
+.sidebar ul li:hover {
+    background-color: #0056b3;
+}
+.sidebar ul li i {
+    margin-right: 10px;
+}
+.main-content {
+    margin-left: 250px;
+    padding: 20px;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.header input {
+    width: 300px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+.header .user-info {
+    display: flex;
+    align-items: center;
+}
+.header .user-info img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.header .user-info span {
+    font-weight: 500;
+}
+.stats {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.stats .stat {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 23%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.stats .stat i {
+    font-size: 30px;
+    color: #007bff;
+}
+.stats .stat div {
+    text-align: right;
+}
+.stats .stat div h3 {
+    margin: 0;
+    font-size: 24px;
+}
+.stats .stat div p {
+    margin: 0;
+    color: #888;
+}
+.charts {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.charts .chart {
+    margin-right: 20px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 48%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.charts .chart h3 {
+    margin: 0 0 20px 0;
+}
+.charts .chart .chart-content {
+    height: 200px;
+    background: url('https://placehold.co/400x200') no-repeat center center;
+    background-size: cover;
+}
+.appointments {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.appointments .appointment, .appointments .recent-patients {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 48%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-right: 20px;
+}
+.appointments .appointment h3, .appointments .recent-patients h3 {
+    margin: 0 0 20px 0;
+}
+.appointments .appointment ul, .appointments .recent-patients ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.appointments .appointment ul li, .appointments .recent-patients ul li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+.appointments .appointment ul li:last-child, .appointments .recent-patients ul li:last-child {
+    border-bottom: none;
+}
+.appointments .appointment ul li img, .appointments .recent-patients ul li img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.appointments .appointment ul li div, .appointments .recent-patients ul li div {
+    flex: 1;
+}
+.appointments .appointment ul li div p, .appointments .recent-patients ul li div p {
+    margin: 0;
+}
+.appointments .appointment ul li div p.name, .appointments .recent-patients ul li div p.name {
+    font-weight: 500;
+}
+.appointments .appointment ul li div p.time, .appointments .recent-patients ul li div p.time {
+    color: #888;
+}
+.appointments .recent-patients ul li div p.status {
+    color: #007bff;
+}
